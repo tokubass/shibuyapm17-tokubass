@@ -30,6 +30,13 @@ sub db {
     $c->{db};
 }
 
+require File::ProjectHome;
+my $pj_home = File::ProjectHome->project_home;
+sub project_home {
+    $pj_home;
+}
+
+
 1;
 __END__
 

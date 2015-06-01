@@ -12,6 +12,11 @@ requires 'Test::WWW::Mechanize::PSGI';
 requires 'Text::Xslate', '2.0009';
 requires 'Time::Piece', '1.20';
 requires 'perl', '5.010_001';
+requires 'File::ProjectHome';
+requires 'Class::Accessor::Lite';
+requires 'Text::MicroTemplate';
+requires 'File::Slurp';
+
 
 on configure => sub {
     requires 'Module::Build', '0.38';
@@ -20,4 +25,7 @@ on configure => sub {
 
 on test => sub {
     requires 'Test::More', '0.98';
+    requires 'Test::JsonAPI::Autodoc';
+    requires 'Harriet', '0.04';
+    requires 'Test::Pretty';
 };

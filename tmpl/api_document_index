@@ -1,0 +1,22 @@
+<html>
+<head>
+  <link type='text/css' rel='stylesheet' href='/docs/css/github.css' />
+</head>
+<body>
+<h3>API Spec</h3>
+<table class="table table-striped table-bordered">
+  <thead>
+    <th>method</th><th>path</th><th>dispatch</th>
+  </thead>
+  <tbody>
+? for my $route (@$routes) {
+    <tr>
+      <td><?= $route->{method} ?></td>
+      <td><?= $route->{path} ?></td>
+      <td><a href=""><?= $route->{controller} ?>#<?= $route->{action}?></a></td>
+    </tr>
+? }
+  </tbody>
+</table>
+</body>
+</html>
