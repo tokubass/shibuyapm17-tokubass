@@ -12,7 +12,6 @@ post '/api/arena' => 'MyApp::Web::C::Api::Arena#create';
 
 if ($ENV{PLACK_ENV} eq 'development') {
     get '/document' => 'MyApp::Web::C::Document#index';
-    get '/document/:controller/:action' => 'MyApp::Web::C::Document#show';
 }
 
 
