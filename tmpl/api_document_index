@@ -1,6 +1,6 @@
 <html>
 <head>
-  <link type='text/css' rel='stylesheet' href='/docs/css/github.css' />
+  <link type='text/css' rel='stylesheet' href='static/css/github.css' />
 </head>
 <body>
 <h3>API Spec</h3>
